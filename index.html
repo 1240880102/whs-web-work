@@ -5,8 +5,24 @@
 		<title></title>
 	</head>
 	<body>
-		<h2>名字</h2>
-		<h3>电话号码</h3>
-		<h3>学号</h3>
+		<div id="show"></div>
+		<input type="text" id="in1"/>+
+		<input type="text" id="in2"/>
+		<button id="btn">计算</button>
+		<script type="text/javascript">
+			var in1 = document.getElementById('in1');
+			var in2 = document.getElementById('in2');
+			var btn = document.getElementById('btn');
+			btn.onclick =function(){
+				var i = parseInt(Number(in1.value))+parseInt(Number(in2.value));
+				show.innerHTML = i;
+				if(isNaN(in1.value||in2.value)==true){
+					alert('请您输入数字')
+				}else{
+					
+				}
+			}
+			
+		</script>
 	</body>
 </html>
