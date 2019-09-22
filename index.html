@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+		var a = prompt("请输入你的账户");
+		var b = prompt("请输入你的密码");
+		var money = 100000;
+		if((a==123456789)&&(b==123456)){
+			alert("登录成功您的卡内余额为:"+money);
+			var c =Number(prompt("取钱金额"));
+			money=money-c;
+			alert("您的账户余额为:"+money);
+		}else{
+			alert("账户/密码错误！请重新输入")
+		}
+	</script>
+</body>
+</html>
