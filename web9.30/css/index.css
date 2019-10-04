@@ -1,0 +1,290 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#possess ul li{
+	list-style: none;
+}
+#header{
+	width: 100%;
+}
+#header div#nav{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top:15px ;
+}
+#header div#nav div#logo{
+	width: 170px;
+	height: 59px;
+	display: inline-block;
+}
+#header div#nav div#logo img{
+	width: 96px;
+	height: 59px;
+	float: left;
+}
+#header div#nav ul.nav{
+	width: 770px;
+	height: 83px;
+	display: inline-block;
+	/*text-align: center;*/
+	margin-left:37% ;
+	margin-top: -73px;
+}
+#header div#nav ul.nav li{
+	float: left;
+	/*margin-left:30px ;*/
+	display: inline-block;
+	/*line-height: 83px;*/
+	padding: 30px 30px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	text-align: center;
+	/*box-sizing: border-box;*/
+}
+#header div#nav ul.nav li:hover{
+	color: #ff5151;
+	border-bottom: 2px solid #FF5151;
+}
+#header div#nav ul.ul{
+	display: inline-block;
+	float: right;
+	margin-top: -57px;
+}
+#header div#nav ul.ul li{
+	float: left;
+	margin-left:30px ;
+}
+#header div#nav ul.ul li img{
+	width: 20px;
+	height: 20px;
+}
+/*******************************************/
+#index{
+	width: 100%;
+}
+#index div#banner{
+	width: 100%;
+	height: 260px;
+	background: url(../img/breadcrumb-bg.jpg);
+	margin: 0 auto;
+}
+#index div#banner div#img{
+	/*position: relative;*/
+}
+#index div#banner div#img img{
+	/*position: absolute;*/
+}
+#index div#banner div#text{
+	margin: 0 auto;
+	text-align: center;
+	padding: 75px 0 0 50px;
+	width: 1200px;
+	height: 80px;
+}
+#index div#banner div#text ul{
+	/*text-align: center;*/
+	margin-left: 43%;
+}
+#index div#banner div#text ul li{
+	/*display: inline-block;*/
+	float: left;
+	font-size: 16px;
+	margin-top:20px ;
+	margin-left: 10px;
+	/*text-align: center;*/
+}
+#index div#deta{
+	width: 1200px;
+	margin: 100px auto 0;
+}
+#index div#deta div#div-left{
+	display: inline-block;
+}
+#index div#deta div#div-left ul{
+	display: inline-block;
+	width: 117px;
+	height: 587px;
+}
+#index div#deta div#div-left ul li{
+	margin-top:10px ;
+	/*display: inline-block;*/
+}
+#index div#deta div#div-left ul li img{
+	width: 117px;
+	height: 137px;
+	border: 1px solid #DDDDDD;
+	display: inline-block;
+}
+#index div#deta div#div-center{
+	display: inline-block;
+	width: 438px;
+	height: 587px;
+	margin-left:1% ;
+}
+#index div#deta div#div-center img{
+	width: 438px;
+	height: 587px;
+	border: 1px solid #ddd;
+	padding-top:8px ;
+}
+#index div#deta div#div-right{
+	display: inline-block;
+	margin-top:20px ;
+	margin-left:2% ;
+	vertical-align: top;
+}
+#index div#deta div#div-right ul{
+	display: inline-block;
+}
+#index div#detail{
+	width: 1200px;
+	margin: 0 auto;
+}
+#index div#detail div#nav{
+	width: 1200px;
+	height: 153px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+	
+	/*text-align: center;*/
+}
+#index div#detail div#nav ul{
+	text-align: center;
+	/*line-height: 153px;*/
+	padding-top: 90px;
+}
+#index div#detail div#nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 2%;
+	font-size: 18px;
+	cursor: pointer;
+	line-height: 60px;
+	/*padding-bottom: 20px;*/
+}
+#index div#detail div#nav ul li:hover{
+	color: #FF5151;
+	border-bottom: 3px solid #FF5151;
+}
+#index div#detail div#features ul li ul li{
+	cursor: pointer;
+	margin-top:10px ;
+	font-size: 14px;
+}
+#index div#detail div#features ul li ul li:hover{
+	color: #FF5151;
+}
+#footer{
+	width: 100%;
+	margin-top:60px ;
+	background-color:#f6f6f6;
+}
+#footer div.footer{
+	width: 1200px;
+	margin: 0 auto;
+}
+#footer div.footer div#one{
+	width: 370px;
+	height: 244px;
+	padding-top: 50px;
+	display: inline-block;
+}
+#footer div.footer div#one div#logo{
+	width: 96px;
+	height: 59px;
+}
+#footer div.footer div#one div#text{
+	font-size: 14px;
+	margin-top:20px ;
+}
+#footer div.footer div#one div#input{
+	margin-top:20px ;
+	
+}
+#footer div.footer div#one div#input input{
+	width: 300px;
+	border: none;
+	background-color:#F6F6F6 ;
+	padding: 10px 0;
+	color: gray;
+	font-size: 14px;
+	border-bottom:1px solid #ddd ;
+}
+#footer div.footer div#one div#btn{
+	width: 110px;
+	height: 35px;
+	margin-top:10px ;
+	background: #FF5151;
+	text-align: center;
+}
+#footer div.footer div#one div#btn button{
+	border: none;
+	line-height: 35px;
+	background: #FF5151;
+	color: #fff;
+}
+#footer div.footer div#two{
+	display: inline-block;
+	margin-left:3% ;
+	vertical-align: top;
+	margin-top: 70px;
+	width: 170px;
+}
+#footer div.footer div#two ul{
+	
+}
+#footer div.footer div#two ul li{
+	cursor: pointer;
+}
+#footer div.footer div#two ul li:hover{
+	color: #FF5151;
+}
+#footer div.footer div#three{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 70px;
+	width: 270px;
+}
+#footer div.footer div#four{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 70px;
+	width: 300px;
+}
+#footer div.footer div#four ul{
+	
+}
+#footer div.footer div#four ul li{
+	/*margin-bottom: 20px;*/
+}
+#footer div.footer div#four ul li img{
+	width: 70px;
+	height: 70px;
+}
+#footer div.footer div#four ul li ul{
+	display: inline-block;
+	width: 190px;
+	vertical-align: top;
+}
+#footer div.footer div#four ul li ul li{
+	font-size: 13px;
+	cursor: pointer;
+}
+#footer div.footer div#four ul li ul li:hover{
+	color: #ff5151;
+}
+#footer #footer-bottom{
+	width: 100%;
+	height: 63px;
+	background-color: #f1f1f1;
+	margin-top: 100px;
+}
+#footer #footer-bottom p{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 63px;
+	font-size: 15px;
+}
