@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            width: 300px;
+            margin: 0 auto;
+        }
+        #box{
+            overflow: hidden;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color:#ddd;
+        }
+        #box > div{
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid #000; */
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            background-image: url();
+            background-size: cover;
+        }
+        .active{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var arr = [
+        //列 1 2 3 4 
+            [0,1,2,3,4,5],//行1
+            [2,1,5,0,3,4],//2
+            [3,5,1,4,2,0],//3
+            [5,3,4,1,0,2],//4
+            [4,5,3,0,2,1],
+            [1,5,2,0,4,3],
+        ]
+        
+        var narr = [];
+        for(var i = 0;i<6;i++){
+            for(var j= 0;j<6;j++){
+                var divs = document.createElement('div');
+                box.appendChild(divs);
+                divs.style.top = (i*50)+'px';
+                divs.style.left = (j*50)+'px';
+                // divs.innerHTML = arr[i][j];
+                divs.style.backgroundImage = 'url('+arr[i][j]+'.png)';
+                divs.onclick = function(){
+                    if(narr.length<2){
+                        if(this.className == 'active'){
+                            alert('已选过');
+                        }else{
+                            this.className = 'active';
+                            narr.push(Number(this.innerHTML));
+                        }
+                        // this.className = 'active';
+                    }else{
+                        narr = [];
+                        var ss = box.querySelectorAll('#box>div');
+                        for(var z=0;z<ss.length;z++){
+                            ss[z].className = '';
+                        }
+                        divs.className = '';
+                        narr.push(Number(this.innerHTML));
+                        this.className = 'active';
+                    }
+                    if(narr.length == 2){
+                        // console.log(narr[0]-narr[1]);
+                        if(narr[0]-narr[1]==0){
+                            var ww = box.querySelectorAll('.active');
+                            for(var e = 0;e<ww.length;e++){
+                                ww[e].innerHTML = '';
+                                ww[e].className = '';
+                                ww[e].onclick = null;
+                                ww[e].style.backgroundImage = '';
+                            }
+                        }
+                    }
+                    console.log(narr);
+                    // alert(typeof Numeber(this.innerHTML));
+                }
+            }
+        }
+    </script>
+</body>
+</html>
