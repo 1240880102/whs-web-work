@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../jquery-1.10.2/jquery.min.js"></script>
+		<style>
+			#div1{
+	            width: 80px;
+	            height:80px;
+	            border-radius: 50%;
+	            box-shadow: 5px 5px 5px #000;
+	            display: inline-block;
+	            float: left;
+        	}  
+			#div2{
+				float: left;
+				margin-top: 30px;
+			}
+			.div3{
+				float: left;
+				width: 50px;
+			    height: 50px;
+			    border-radius: 50%;
+			    box-shadow: 5px 5px 5px #000;
+			    margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2">
+			<div class="div3"></div>
+			<div class="div3"></div>
+			<div class="div3"></div>
+			<div class="div3"></div>
+		</div>
+		<script>
+			var colors=["red","blue","yellow","green"];
+//			each遍历
+			$(".div3").each(function(i){
+				$(this).css("backgroundColor",colors[i]);
+	      	});
+	      	
+	        $(".div3").click(function(){
+            	$("body").css("background-color",$(this).css("background-color"));})
+	        $("#div1").click(function(){
+                $(".div3").toggle(500);
+            })
+		</script>
+	</body>
+</html>
