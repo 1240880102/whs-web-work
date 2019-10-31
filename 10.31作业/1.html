@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="in1">华为mate20
+    <input type="number" id="in2" value="1">
+    单价：￥9999
+    合计：<span id="s1"></span>元
+    <br>
+    <input type="checkbox" id="in3">小米8
+    <input type="number" id="in4" value="1">
+    单价：￥9999
+    合计：<span id="s2"></span>元
+    <br>
+    <p id="pp">0</p>
+    <script>
+        var a = 0;
+        var b = 0;
+        $('#s1').html($('#in2').val() * 9999);
+        $('#in2').change(function () {
+            $('#s1').html($('#in2').val() * 9999);
+            if (a == 1 && b == 1) {
+                $('#pp').html(Number($('#s1').html()) + Number($('#s2').html()));
+            } else if (a == 1 && b == 0) {
+                $('#pp').html(Number($('#s1').html()));
+            } else if (b == 1 && a == 0) {
+                $('#pp').html(Number($('#s2').html()));
+            } else {
+                $('#pp').html('0');
+            }
+        })
+        $('#s2').html($('#in4').val() * 9999);
+        $('#in4').change(function () {
+            $('#s2').html($('#in4').val() * 9999);
+            if (a == 1 && b == 1) {
+                $('#pp').html(Number($('#s1').html()) + Number($('#s2').html()));
+            } else if (a == 1 && b == 0) {
+                $('#pp').html(Number($('#s1').html()));
+            } else if (b == 1 && a == 0) {
+                $('#pp').html(Number($('#s2').html()));
+            } else {
+                $('#pp').html('0');
+            }
+        })
+        $('#in1').click(function () {
+            if (a == 0) {
+                a = 1
+            } else {
+                a = 0
+            }
+            if (a == 1 && b == 1) {
+                $('#pp').html(Number($('#s1').html()) + Number($('#s2').html()));
+            } else if (a == 1 && b == 0) {
+                $('#pp').html(Number($('#s1').html()));
+            } else if (b == 1 && a == 0) {
+                $('#pp').html(Number($('#s2').html()));
+            } else {
+                $('#pp').html('0');
+            }
+        })
+        $('#in3').click(function () {
+            if (b == 0) {
+                b = 1
+            } else {
+                b = 0
+            }
+            if (a == 1 && b == 1) {
+                $('#pp').html(Number($('#s1').html()) + Number($('#s2').html()));
+            } else if (a == 1 && b == 0) {
+                $('#pp').html(Number($('#s1').html()));
+            } else if (b == 1 && a == 0) {
+                $('#pp').html(Number($('#s2').html()));
+            } else {
+                $('#pp').html('0');
+            }
+        })
+    </script>
+</body>
+</html>
